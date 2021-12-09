@@ -1,5 +1,8 @@
 const context = require('request-context')
 const path = require('path')
+const fs = require('fs')
+
+fs.existsSync(path.join(__dirname, '../logs')) && fs.mkdir(path.join(__dirname, '../logs'))
 
 const options = {
   logDirectory:path.join(__dirname, '../logs'), // Директория для хранения логгов (должна существовать)
