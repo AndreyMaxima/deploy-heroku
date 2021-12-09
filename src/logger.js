@@ -1,9 +1,7 @@
 const context = require('request-context')
-const path = require('path')
-const fs = require('fs')
 
 const options = {
-  logDirectory:path.join(__dirname, '../logs'), // Директория для хранения логгов (должна существовать)
+  logDirectory:'./logs', // Директория для хранения логгов (должна существовать)
   fileNamePattern: '<DATE>.log', // Паттерн файла логов
   dateFormat: 'DD.MM.YYYY' // Формат даты
 }
